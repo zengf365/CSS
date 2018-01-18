@@ -8,12 +8,9 @@
 	  	margin: 0px;
 	  	padding: 0px;
 	  }	 
-	  /*方法1：加上一个类方法*/
-	  .clear{
-             clear: both;   /*一般直接both清楚*/
-	  }
 	  .box1 {
-	  	width: 500px;    
+	  	width: 500px;  
+	  	overflow: hidden; /方法二：*hidden|auto|scroll都可以，可以通过BFC清除浮动效果  */
 	 /* 如果父亲box1没有设置高度，然而son1，son2设置的浮动，box2就会移动到son1,son2的下面去*/
 	 
 	  }
@@ -42,7 +39,7 @@
       	<div class="son1"></div>
       	<div class="son2"></div>
       	<!-- 方法一：在浮动的盒子后面加一个空盒子 -->
-      	<div class="clear"></div>
+      	<!-- <div class="clear"></div> -->
      </div>
     <div class="box2"></div>   
 </body>
