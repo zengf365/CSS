@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>文字凹凸效果</title>
+		<style type="text/css">
+		   body{
+		   	 background-color: #ccc;
+		   }
+		   div {
+		   	 color:#ccc;
+		   	  font:70 60px "微软雅黑"
+		   }
+		   div:first-child  {
+               /*text-shadow: 水平位置 垂直位置 模糊距离 阴影颜色            */
+               text-shadow: 1px 1px 1px #000,-1px -1px #fff; /*凸起，前写往右下的方向(正值，黑)，后面写的左上（负值，白）*/
+		   }
+		   div:last-child {
+		   	   text-shadow: -1px -1px 1px #000,1px 1px #fff;   /*凹下，前面写左上的方向（负值，黑），后面写右下（正值，白）*/
+		   }	
+		</style>
+</head>
+<body>
+  <div>我是凸的文字</div>
+  <div>我是凹的文字</div>
+</body>
+</html>

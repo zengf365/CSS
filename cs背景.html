@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>css背景</title>
+	  <style type="text/css">
+	     div {
+	     	width: 300px;
+	     	height: 300px;
+	     	background-color: white;
+	     	background-repeat: round;
+	     	   /*background-repeat:repeat-x;x横向平铺，y为纵向纵向平铺no-repeat背景不平铺，repeat横向纵向平铺，round自动缩放适应整个容器，space背景图像以相同间距平铺且填充满整个容器或者方向*/
+	     	background-image:url(images/HBuilder.png);
+            background-position: right bottom;
+               /* background-position默认放在左上角,如果只写一个属性，那么另一个默认是center */
+            background-position: 10px 30px; 
+              /* 出现精确单位 第一个是x坐标，一个是y坐标，（center 10px 水平居中，垂直是10px），（10px center 水平10px 垂直是center）*/
+            background-attachment:scroll;   
+              /* 背景附着，默认滚动，fixed文字与背景相对不滚动 */
+	        }
+
+      </style>
+</head>
+<body>
+  <div>
+  	
+  </div>
+</body>
+</html>

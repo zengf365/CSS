@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>属性选择器</title>
+	<style type="text/css">
+	 /*属性选择器用中括号来表示*/
+		a[title]{
+         color: red;
+		}	
+		/*直接选择属性值*/
+		input[type=text]{
+			color: red;
+		}
+		/*^=表示font开头就可匹配*/
+		div[class^=font]{
+			color:pink;
+		}
+		/*  $=表示结束位置  */
+		div[class$=footer]{
+			color: green;
+		}
+         /* *=表示包含有该字段的*/
+		div[class*=jd]{
+			color: skyblue;
+		}
+
+	</style>
+</head>
+<body>
+<a href="#" title="我是新浪">新浪</a>
+<a href="#" title="我是百度">百度</a>
+<a href="#">搜狐</a>
+<a href="#">搜狐</a>
+<a href="#">搜狐</a>
+<input type="text" name=""   value="文本框">
+<input type="text" name=""   value="文本框">
+<input type="submit" name="" value="文本框">
+<input type="reset" name=""  value="文本框">
+<input type="reset" name=""  value="文本框">
+<div class="font12">属性选择器</div>
+<div class="font22">属性选择器</div>
+<div class="subfooter">属性选择器</div>
+<div class="news-jd-nav">属性选择器</div>
+<div class="news-jd-header">属性选择器</div>
+</body>
+</html>

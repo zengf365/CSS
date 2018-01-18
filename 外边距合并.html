@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>内外边距合并</title>
+	<style type="text/css">
+		div {
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+		}
+		div:first-child{
+			margin-bottom: 100px;
+		}
+		div:last-child {  
+			background-color: purple;
+			margin-top: 50px;     /*上下垂直盒子合并以大的值为准*/
+		}
+	</style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+</body>
+</html>

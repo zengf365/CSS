@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+    	div {
+		width:300px;
+		height: 100px;
+		border:1px solid pink;
+		text-align: center;   /* 文字居中的解决办法*/
+		margin: 10px auto;    /*  盒子居中解决方案：margin左右改为auto;*/
+	        }
+      section{
+      	    width:400px;
+      	    height: 500px;
+      	    border: 1px solid #000;
+
+      }
+      section img{
+      	width: 200px;
+      	height: 210px;
+      	padding-top: 30px;  /*插入图片也相当于是是盒子*/
+      }
+      aside {
+  	        width:400px;
+      	    height: 500px;
+      	    border: 1px solid purple;
+      	    background: #fff url(images/wizard.jpg) 0 0 no-repeat ;  /*0 0是坐标*/
+      	    background-size: 400px 410px;/*背景图片更改大小只能用background-size*/
+      	    background-position: 30px 50px ;
+    }
+	</style>
+</head>
+<body>
+	<!-- 1. 文字水平居中 和 盒子水平居中 -->
+  <div>文字水平居中</div>
+    <!-- 2.插入图片与背景图片 -->
+  <section>
+  	   <img src="images/wizard.jpg" alt=" ">
+  </section>
+    <aside>
+        背景图片
+    </aside>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>圆角矩形</title>
+	<style type="text/css">
+		div {
+			width: 200px;
+			height: 200px;
+			border: 1px solid red;
+		}
+		div:first-child {
+          border-radius: 10px; /*表示4个角都是一样的*/
+		}
+		div:nth-child(2){
+			border-radius: 250px;   /*或者使用50%*/
+		}
+		div:nth-child(3){
+			border-radius: 20px 40px;/* 左上与右下是10px,右上与左下是40px*/
+		}
+
+		div:nth-child(4){
+			border-radius: 20px 40px 80px;   /*第一个是左上，第二个是右上与左下，第三个是右下*/
+		}
+		
+		div:nth-child(5){
+			border-radius: 10px 50px 60px 50px;   /*z左上 右上 右下 左下*/
+		}
+
+		div:nth-child(6){
+			border-radius: 100px;
+			height: 100px;		}
+	</style>
+</head>
+<body>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+
+</body>
+</html>
