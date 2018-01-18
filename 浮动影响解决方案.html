@@ -35,16 +35,23 @@
 
 	/*  方法3：利用伪元素清除*/
 	  .clearfix:after {
+	  /*  方法4：利用双伪元素清除*/
+	  .clearfix:before, .clearfix:after {
 	  	content: ".";
 	  	display: block;
 	  	height: 0;
 	  	visibility: hidden;
+	  	display:table;
+	  }
+	  .clearfix:after {
 	  	clear: both;
 	  }
 	  .clearfix {
-	  	*zoom:1; *ie6,7能识别的特殊符号 带有这个属性的只有6,7才执行，zoom就是ie6,7清除浮动的方法
+	  	*zoom:1;
 	  }
 	  /*方法三：利用伪元素清除*/
+	/*  方法4：利用双伪元素清除*/
+	 
 	</style>
 </head>
 <body>
